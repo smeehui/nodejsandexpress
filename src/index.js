@@ -18,4 +18,4 @@ app.set("views", path.join(__dirname, "resource", "views"));
 
 app.get("/", (req, res) => res.render("home"));
 app.get("/news", (req, res) => res.render("news"));
-app.listen(port, (req, res) => console.log(`Listening on ${port}`));
+app.listen(port, (req, res) => console.log(`I Listening on ${port}`));
