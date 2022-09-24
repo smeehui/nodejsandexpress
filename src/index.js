@@ -9,6 +9,8 @@ const port = 3000;
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 app.use(morgan("tiny"));
+// Static
+app.use(express.static(path.join(__dirname, "public")));
 
 app.engine("hbs", engine({ extname: ".hbs" }));
 app.set("view engine", "hbs");
