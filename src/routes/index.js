@@ -1,6 +1,8 @@
-import { default as siteRouter } from "./site";
+import entsRouter from "./ents";
+import siteRouter from "./site";
 
 function routes(app) {
+    app.use("/ents", entsRouter);
     app.use("/", siteRouter);
 }
 
